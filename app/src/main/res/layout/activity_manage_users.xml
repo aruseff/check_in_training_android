@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/appSecondColor">
+
+        <!--<TextView-->
+        <!--android:id="@+id/allTrainingTextView"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:background="@color/appSecondColor"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="10dp"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="16sp" />-->
+
+        <TextView
+            android:id="@+id/usersCount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:paddingTop="10dp"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/usersCount"
+            android:gravity="center"
+            android:queryHint="Търси по име..." />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:layout_toStartOf="@+id/searchView" />
+
+        <!--<ImageButton-->
+        <!--android:id="@+id/incognitoIcon"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_toStartOf="@+id/searchView"-->
+        <!--android:background="@null"-->
+        <!--android:src="@drawable/incognito"/>-->
+
+    </RelativeLayout>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/manageUsersListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout" />
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/inactiveUsersListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/headerLayout"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/manageUsersListView"
+        android:background="@android:color/darker_gray" />
+
+
+    <LinearLayout
+        android:id="@+id/addUserLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="250dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/addUserButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:background="@color/appSecondColor"
+            android:text="Добави"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</RelativeLayout>

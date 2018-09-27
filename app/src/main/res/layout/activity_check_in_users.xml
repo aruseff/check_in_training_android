@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/appSecondColor"
+        android:weightSum="2">
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="1"
+            android:text="Добави: "
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:gravity="left|center"
+             />
+
+        <TextView
+            android:id="@+id/doneButton"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Готово"
+            android:padding="10dp"
+            android:textSize="16sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#FFFFFF"
+            android:gravity="end|center"
+            />
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/alertTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#92f4a907"
+        android:drawableStart="@drawable/alert"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Внимание! Избрали сте стара дата"
+        android:textColor="@color/appTextColor"
+        android:textSize="17sp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/noUsersTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#92f2f2f2"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Не са намерени трениращи!"
+        android:textColor="#a0000000"
+        android:textSize="12sp"
+        android:layout_marginBottom="10dp"
+        android:visibility="gone"
+        android:textStyle="italic" />
+
+    <ListView
+        android:id="@+id/usersListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>
