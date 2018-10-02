@@ -97,16 +97,16 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/progressBarChild"
-            style="@style/SpinKitView.Small.Circle"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:background="#A0FFFFFF"
-            android:padding="10dp"
-            app:SpinKit_Color="#000000" />
+        <!--<com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/progressBarChild"-->
+            <!--style="@style/SpinKitView.Small.Circle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="#A0FFFFFF"-->
+            <!--android:padding="10dp"-->
+            <!--app:SpinKit_Color="#000000" />-->
 
     </RelativeLayout>
 
@@ -144,16 +144,16 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/progressBarAdult"
-            style="@style/SpinKitView.Small.Circle"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerHorizontal="true"
-            android:layout_gravity="center"
-            android:background="#A0FFFFFF"
-            android:padding="10dp"
-            app:SpinKit_Color="#000000" />
+        <!--<com.github.ybq.android.spinkit.SpinKitView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+            <!--android:id="@+id/progressBarAdult"-->
+            <!--style="@style/SpinKitView.Small.Circle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="#A0FFFFFF"-->
+            <!--android:padding="10dp"-->
+            <!--app:SpinKit_Color="#000000" />-->
 
     </RelativeLayout>
 

@@ -51,7 +51,9 @@ public class UserDetailsActivity extends AppCompatActivity {
                 statusTextView.setTextColor(user.isActive() ? Color.GREEN : Color.RED);
                 trainingsTextView.setText(String.valueOf(trainingsCount));
                 createMonthSpinner();
-                examTextView.setText(ExamMessages.getExamMessage(trainingsCountLast3Months, user.getLastPayment()));
+                String examMsg = ExamMessages.getExamMessage(trainingsCountLast3Months, user.getLastPayment());
+                examTextView.setText(examMsg);
+                examTextView.setTextColor((examMsg != null && examMsg.startsWith("Не") ? Color.RED : Color.GREEN));
                 saveButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

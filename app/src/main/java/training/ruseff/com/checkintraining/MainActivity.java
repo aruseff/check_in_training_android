@@ -33,9 +33,8 @@ public class MainActivity extends AppCompatActivity {
     TextView dateTextView;
     TextView childCountTextView;
     TextView adultCountTextView;
-    SpinKitView progressBarChild;
-    SpinKitView progressBarAdult;
-
+//    SpinKitView progressBarChild;
+//    SpinKitView progressBarAdult;
 
     Calendar calendar = Calendar.getInstance();
 
@@ -118,8 +117,8 @@ public class MainActivity extends AppCompatActivity {
         dateTextView = findViewById(R.id.dateTextView);
         childCountTextView = findViewById(R.id.childCountTextView);
         adultCountTextView = findViewById(R.id.adultCountTextView);
-        progressBarChild = findViewById(R.id.progressBarChild);
-        progressBarAdult = findViewById(R.id.progressBarAdult);
+//        progressBarChild = findViewById(R.id.progressBarChild);
+//        progressBarAdult = findViewById(R.id.progressBarAdult);
     }
 
     @Override
@@ -152,14 +151,14 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Integer result) {
-            progressBarChild.setVisibility(View.GONE);
+//            progressBarChild.setVisibility(View.GONE);
             childCountTextView.setText(String.valueOf(result));
         }
 
         @Override
         protected void onPreExecute() {
             adultCountTextView.setText("");
-            progressBarChild.setVisibility(View.VISIBLE);
+//            progressBarChild.setVisibility(View.VISIBLE);
         }
 
         @Override
@@ -179,14 +178,14 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Integer result) {
-            progressBarAdult.setVisibility(View.GONE);
+//            progressBarAdult.setVisibility(View.GONE);
             adultCountTextView.setText(String.valueOf(result));
         }
 
         @Override
         protected void onPreExecute() {
             adultCountTextView.setText("");
-            progressBarAdult.setVisibility(View.VISIBLE);
+//            progressBarAdult.setVisibility(View.VISIBLE);
         }
 
         @Override
